@@ -50,9 +50,9 @@ collections:
             ],
         }
 
-  - name: "pages"
-    label: "Pages"
-    folder: "src/pages/content"
+  - name: "about"
+    label: "About"
+    folder: "src/pages/about"
     create: false
     slug: "{{slug}}"
     fields:
@@ -60,8 +60,8 @@ collections:
           label: "Content Type",
           name: "contentType",
           widget: "hidden",
-          default: "pages",
+          default: "about",
         }
-      - { label: "Path", name: "path", widget: "hidden", default: "/" }
+      - { label: "Path", name: "path", widget: "hidden", default: "/about" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
