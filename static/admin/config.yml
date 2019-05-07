@@ -1,6 +1,7 @@
 backend:
   name: github
-  branch: samypogs/untitled_v2
+  branch: master
+  repo: samypogs/untitled_v2
 
 publish_mode: editorial_workflow
 
