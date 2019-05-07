@@ -1,7 +1,7 @@
 backend:
   name: github
-  branch: master
   repo: samypogs/untitled_v2
+  branch: master
 
 publish_mode: editorial_workflow
 
@@ -50,9 +50,9 @@ collections:
             ],
         }
 
-  - name: "about"
-    label: "About"
-    folder: "src/pages/about"
+  - name: "pages"
+    label: "Pages"
+    folder: "src/pages/content"
     create: false
     slug: "{{slug}}"
     fields:
@@ -60,8 +60,8 @@ collections:
           label: "Content Type",
           name: "contentType",
           widget: "hidden",
-          default: "about",
+          default: "pages",
         }
-      - { label: "Path", name: "path", widget: "hidden", default: "/about" }
+      - { label: "Path", name: "path", widget: "hidden", default: "/" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
